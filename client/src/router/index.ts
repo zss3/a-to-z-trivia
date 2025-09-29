@@ -36,6 +36,11 @@ const router = createRouter({
           name: 'AdminCreateGame',
           component: () => import('../views/admin/CreateGameView.vue'),
         },
+        {
+          path: 'manage-hosts',
+          name: 'AdminManageHosts',
+          component: () => import('../views/admin/ManageHostsView.vue'),
+        },
       ],
     },
   ],

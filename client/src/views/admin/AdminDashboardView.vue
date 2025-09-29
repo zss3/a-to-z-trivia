@@ -14,8 +14,8 @@ const recentGames = [
 </script>
 
 <template>
-  <h1>Admin Dashboard</h1>
   <div class="dashboard-container">
+    <h1 class="page-title">Admin Dashboard</h1>
     <section class="quick-actions">
       <h2>Quick Actions</h2>
       <div class="card-row">
@@ -34,7 +34,11 @@ const recentGames = [
           <template #title>Manage Hosts</template>
           <template #content>
             <p>View and manage host venues.</p>
-            <Button label="Go to Hosts" icon="pi pi-users" />
+            <Button
+              label="Manage Hosts"
+              icon="pi pi-users"
+              @click="router.push({ name: 'AdminManageHosts' })"
+            />
           </template>
         </Card>
         <Card class="dashboard-card">

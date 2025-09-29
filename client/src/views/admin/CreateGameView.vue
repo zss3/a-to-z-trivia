@@ -14,7 +14,7 @@ function onFileSelect(event: { files: File[] }) {
 }
 
 function onSubmit() {
-  // Add your submit logic here
+  // Add submit logic here
   alert(`Game: ${name.value}\nDates: ${dates.value}\nFile: ${file.value?.name || 'None'}`)
 }
 </script>
@@ -67,17 +67,9 @@ function onSubmit() {
 <style scoped>
 .create-game-page {
   min-height: 100%;
-  padding: 2.5rem 5vw 2rem 5vw;
-  background: var(--surface-ground, #f8f9fa);
+  padding: 2rem 5vw 2rem 5vw;
   display: flex;
   flex-direction: column;
-}
-
-.page-title {
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 2rem;
-  margin-top: 0;
 }
 
 .create-game-form {
